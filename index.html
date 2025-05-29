@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konversi suhu C K F</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <!-- form input suhu -->
+   <div class="converter">
+    <h2>Konversi Suhu</h2>
+
+    <!-- Input suhu -->
+    <label for="input">Masukkan Suhu:</label>
+    <input type="text" id="input" placeholder="Contoh: 100">
+
+    <!-- Pilih satuan -->
+    <label for="scale">Dari Satuan:</label>
+    <select id="scale">
+      <option value="C">Celsius (°C)</option>
+      <option value="F">Fahrenheit (°F)</option>
+      <option value="K">Kelvin (K)</option>
+    </select>
+
+    <!-- Tombol aksi -->
+    <div class="btn-group">
+      <button onclick="convert()">Konversi</button>
+      <button onclick="reverse()">Reverse</button>
+      <button onclick="resetAll()">Reset</button>
+    </div>
+
+    <!-- Pesan error -->
+    <div class="error" id="error"></div>
+
+    <!-- Hasil konversi akan muncul di sini -->
+    <div class="result" id="result" style="display:none;"></div>
+  </div>
+  </main>
+ <script src="js/index.js"></script>
+</body>
+</html>
